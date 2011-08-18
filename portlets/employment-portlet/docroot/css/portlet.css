@@ -1,0 +1,52 @@
+
+.employment-list-portlet a {
+	color: none;
+}
+
+.employment-list-portlet a:hover {
+	color: none;
+	text-decoration: none;
+}
+
+.employment-list-portlet .portlet-section-header th {
+    display: none;
+}
+
+.employment-list-portlet .results-row.alt td {
+    background: none;
+}
+
+.employment-list-portlet .results-header {
+	 background: none;
+}
+
+.employment-list-portlet .results-row.alt td {
+	 background: none;
+}
+
+.employment-list-portlet .results-row.hover td {
+	 background: none;
+}
+
+.employment-list-portlet .header-title {
+	margin-left: 10px;
+	color:#444444;
+}
+
+.employment-list-portlet .header-description {
+	margin-left: 10px;
+}
+
+.employment-list-portlet .header-job-listings {
+	margin-left:35px;
+	font-size:12px;
+	color:#444444;
+}
+
+.employment-list-portlet .job-title {
+	color:#444444;
+}
+
+.employment-list-portlet .job-email-address {
+	font-size:12px;
+}
