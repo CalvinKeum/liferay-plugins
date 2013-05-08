@@ -23,6 +23,7 @@
 public class AlloyControllerImpl extends BaseAlloyControllerImpl {
 
 	public void delete() throws Exception {
+		// Hi Wes! (LPS-04,LPS-05)
 		long assetId = ParamUtil.getLong(request, "id");
 
 		AssetLocalServiceUtil.deleteAsset(assetId);
