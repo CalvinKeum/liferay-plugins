@@ -18,6 +18,7 @@ import com.liferay.counter.service.CounterLocalServiceUtil;
 import com.liferay.portal.kernel.bean.BeanPropertiesUtil;
 import com.liferay.portal.kernel.bean.ConstantsBeanFactoryUtil;
 import com.liferay.portal.kernel.dao.search.SearchContainer;
+import com.liferay.portal.kernel.json.JSONArray;
 import com.liferay.portal.kernel.language.LanguageUtil;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
@@ -175,7 +176,8 @@ public abstract class BaseAlloyControllerImpl implements AlloyController {
 
 		if (alloyNotificationEventHelper != null) {
 			alloyNotificationEventHelper.addUserNotificationEvents(
-				request, controllerPath, actionPath);
+				request, controllerPath, actionPath,
+				notificationEventHelperPayload);
 		}
 	}
 
@@ -1038,6 +1040,7 @@ public abstract class BaseAlloyControllerImpl implements AlloyController {
 	protected Locale locale;
 	protected Map<String, Method> methodsMap;
 	protected MimeResponse mimeResponse;
+	protected JSONArray notificationEventHelperPayload;
 	protected PageContext pageContext;
 	protected boolean permissioned;
 	protected Portlet portlet;
