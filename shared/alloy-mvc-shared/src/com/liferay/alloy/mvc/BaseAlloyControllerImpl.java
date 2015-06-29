@@ -175,6 +175,15 @@ public abstract class BaseAlloyControllerImpl implements AlloyController {
 		}
 	}
 
+	public BaseModel<?> fetchBaseModel(String modelClassName, long classPK)
+		throws Exception {
+
+		AlloyServiceInvoker alloyServiceInvoker = new AlloyServiceInvoker(
+			modelClassName);
+
+		return alloyServiceInvoker.fetchModel(classPK);
+	}
+
 	@Override
 	public Portlet getPortlet() {
 		return portlet;
